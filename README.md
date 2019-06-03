@@ -50,6 +50,17 @@ IDE Intelli j에서 콘솔창으로 확인 또는 <br>
 
 Windows cmd를 통해 확인 <br>
 
+
+지속적인 수정 방향) 
+
+1. 고객이 이 프로그램 상에서 실시간으로 바로 새로운 내용을 입력하여 저장이 되도록 구현
+
+2. 원래 처음에는 배열을 사용하였으나 1번을 충족시키기 어렵다고 판단하여 HashMap을 사용. 
+   하지만 HashMap의 경우, 콘솔창에 출력되는 모양이 예쁘지 않고 지저분하여 결국 ArrayList 사용. 
+   ArrayList를 통해 고객이 얼마든지 내용을 추가할 수 있도록 구현 (O)
+3. 내용이 비슷하게 중복되는 클래스들을 Interface나 오버라이딩 등을 사용하여 좀 더 편하게 수정하고 동료들이 읽기 쉽게 
+   리팩토링 (O)
+
 -------------------------------------------------------------------------
 
 <h3>4.프로그램을 구현합니다</h1> <br>
@@ -57,6 +68,8 @@ Windows cmd를 통해 확인 <br>
 <img src="https://github.com/gyumeen/motivation-program/blob/master/images/%EA%B5%AC%ED%98%84%201.png?raw=true">
 
 <img src="https://github.com/gyumeen/motivation-program/blob/master/images/cmd%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%20%EC%97%90%EB%9F%AC.png?raw=true">
+
+이건 뭐지..
 
 
 
