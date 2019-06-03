@@ -6,8 +6,8 @@ class SportsCategory {
     public SportsCategory() {
         System.out.println("1.농구  2.야구  3.축구  4.미식축구  5.바둑  6.기타");
         Scanner chooseSports = new Scanner(System.in);
-        int selectedSportsNumber = chooseSports.nextInt();
-        if(selectedSportsNumber == 1) {
+        int selectedSports = chooseSports.nextInt();
+        if(selectedSports == 1) {
             ArrayList<String> basketBall = new ArrayList<String>();
             basketBall.add("(마이클 조던) : 두려움은 환상이다 \n\n");
             basketBall.add("9000번 이상 슛을 놓치고.300번의 게임에서 졌다.\n 나를 믿고 맡겨진 결정골을 놓친것은 26번이다.\n 나는 지금까지 실패하고 또 실패했다.\n 그것이 내가 성공한 이유다.\n\n");
@@ -39,21 +39,21 @@ public class MotivationProgram {
     public static void main(String[] args)  {
         System.out.println("[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3,프로그래밍  4.인생");
 
-        Scanner chooseFirstNumber = new Scanner(System.in);
-        int selectedFirstNumber = chooseFirstNumber.nextInt();
+        Scanner chooseFirst = new Scanner(System.in);
+        int selectedFirst = chooseFirst.nextInt();
 
-        if(selectedFirstNumber == 1) {
-            SportsCategory InstanceOfSports = new SportsCategory();
-            System.out.println(InstanceOfSports);
-        } else if(selectedFirstNumber == 2) {
-            BusinessCategory InstanceOfBusiness = new BusinessCategory();
-            System.out.println(InstanceOfBusiness);
-        } else if(selectedFirstNumber == 3) {
-            ProgrammingCategory InstanceOfProgramming = new ProgrammingCategory();
-            System.out.println(InstanceOfProgramming);
-        } else if(selectedFirstNumber == 4) {
-            LifeCategory InstanceOfLife = new LifeCategory();
-            System.out.println(InstanceOfLife);
+        if(selectedFirst == 1) {
+            SportsCategory instanceSports = new SportsCategory();
+            System.out.println(instanceSports);
+        } else if(selectedFirst == 2) {
+            BusinessCategory instanceBusiness = new BusinessCategory();
+            System.out.println(instanceBusiness);
+        } else if(selectedFirst == 3) {
+            ProgrammingCategory instanceProgramming = new ProgrammingCategory();
+            System.out.println(instanceProgramming);
+        } else if(selectedFirst == 4) {
+            LifeCategory instanceLife = new LifeCategory();
+            System.out.println(instanceLife);
         }
 
 
