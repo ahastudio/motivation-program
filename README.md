@@ -54,6 +54,8 @@ Windows cmd를 통해 확인 <br>
 
 <h3>4.프로그램을 구현합니다</h1> <br>
 
+<img src="https://github.com/gyumeen/motivation-program/blob/master/images/%EA%B5%AC%ED%98%84%201.png?raw=true">
+
 
 --------------------------------------------------------------------------
 
