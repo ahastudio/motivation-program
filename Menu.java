@@ -20,36 +20,26 @@ public class Menu {
     }
 
     public Category createCategory(String superCategory) {
+        String category = "";
+
         switch (superCategory) {
             case "sports":
-                return createSportsCategory();
+                category = "basketball";
+                break;
 
             case "business":
-                return createBusinessCategory();
+                category = "entrepreneur";
+                break;
 
             case "programming":
-                return createProgrammingCategory();
+                category = "developer";
+                break;
 
             case "life":
-                return createLifeCategory();
+                category = "";
+                break;
         }
 
-        return null;
-    }
-
-    public Category createSportsCategory() {
-        return new Category("basketball");
-    }
-
-    public Category createBusinessCategory() {
-        return new Category("entrepreneur");
-    }
-
-    public Category createProgrammingCategory() {
-        return new Category("developer");
-    }
-
-    public Category createLifeCategory() {
-        return null;
+        return new Category(category);
     }
 }

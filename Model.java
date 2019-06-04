@@ -6,6 +6,8 @@ public class Model {
     ArrayList<String> quotes = new ArrayList<String>();
 
     public void init(String category) {
+        quotes.clear();
+
         switch (category) {
             case "basketball":
                 initBasketball();
@@ -26,7 +28,6 @@ public class Model {
     }
 
     public void initBasketball() {
-        quotes.clear();
         quotes.add("(마이클 조던) : 두려움은 환상이다 \n\n");
         quotes.add("9000번 이상 슛을 놓치고.300번의 게임에서 졌다.\n 나를 믿고 맡겨진 결정골을 놓친것은 26번이다.\n 나는 지금까지 실패하고 또 실패했다.\n 그것이 내가 성공한 이유다.\n\n");
         quotes.add("WELCOME to NBA \n\n\n");
@@ -34,7 +35,6 @@ public class Model {
     }
 
     public void initEntrepreneur() {
-        quotes.clear();
         quotes.add("(NBA 댈러스 매버릭스 구단주 마크 큐반) : 에스프레소 머신?  장난하나? \n에스프레소 머신에 돈을 쓰기 전에 당신 혀부터 깨물어라. \n커피는 고객을 위한 것이다. \n점심시간에 사무실이 아닌 장소에서 이야기를 나누며 커피를 마셔도 충분하다 \n\n");
         quotes.add("야구에서 4할을 치는 타자는 명예에 전당에 오른다. 하지만 사업에서는 딱 한 번만 옳으면 된다.\n\n");
         quotes.add("날마다 저 밖에 있는 누군가는 반드시 당신의 사업을 박살내겠다는 일념 하나로 24시간 일하고있다. 정말 쿨하지 않나!\n\n");
@@ -42,7 +42,6 @@ public class Model {
     }
 
     public void initDeveloper() {
-        quotes.clear();
         quotes.add("(코딩의 신 아샬) : 안녕하세요, 코딩의 신 아샬입니다. \n\n");
         quotes.add("안될 때마다 속으로 외치세요. \n뭔가 잘못했겠지. 뭔가 잘못했겠지. \n\n");
         quotes.add("갑자기 산에 틀어 박혀서 \n난 프로그래밍의 극의에 다다른 자 으아! \n이러고 내려와서 실전에 가보면\n발릴 걸요? \n그냥 발릴 걸요?\n쪽도 못 쓸 걸요?\n이건 중 2병이죠.\n\n");
