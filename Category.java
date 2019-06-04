@@ -5,6 +5,8 @@ import java.util.*;
 
 public class Category {
 
+    /*The reason why I add the 'public' is that other class should access this inner class.
+    default access modifier makes it not be accessed by other classes.*/
     public class SportsCategory {
         public SportsCategory() {
             System.out.println("1.농구  2.야구  3.축구  4.미식축구  5.바둑  6.기타");
