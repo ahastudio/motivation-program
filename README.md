@@ -100,6 +100,18 @@ Windows cmd를 통해 확인 <br>
               두 번째 시도 : javac MotivationProgram.java 코드 뒤에  -encoding UTF-8 을 추가
               두 번째 결과 : 디렉토리를 확인해 보니 java파일 내 모든 class들이 컴파일 됨
               
+              세 번째 시도 : 컴파일 후, java MotivationProgram 입력 
+              
+              세 번째 결과 : C:\Users\KyuMinLee\IdeaProjects\java-dalLab-1\src\JavaReport>java MotivationProgram
+                            Error: Could not find or load main class MotivationProgram
+                            Caused by: java.lang.ClassNotFoundException: MotivationProgram
+                            
+              네 번째 시도 : [참고 사이트](https://superblo.tistory.com/entry/%EC%BB%A4%EB%A7%A8%EB%93%9Ccmd%EC%97%90%EC%84%9C-%EC%9E%90%EB%B0%94-%EC%BB%B4%ED%8C%8C%EC%9D%BC%ED%95%98%EA%B8%B0-%EB%B0%8F-%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%952?category=667828)
+              
+                             
+
+C:\Users\KyuMinLee\IdeaProjects\java-dalLab-1\src\JavaReport>
+              
 
 -------------------------------------------------------------------------
 
