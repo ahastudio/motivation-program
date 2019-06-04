@@ -92,7 +92,9 @@ Windows cmd를 통해 확인 <br>
                  
            5. 코드를 10년 후에 다시 볼 때도 쉽게 이해할 수 있도록 변수명의 가시성 향상 (O)   
            
-           6. Windows cmd 콘솔창에서 error가 발생.
+           6. UI와 로직의 분리 (
+           
+           7. Windows cmd 콘솔창에서 error가 발생.
               첫 해결 시도 : [참고 사이트](https://extrememanual.net/12502)
                             chcp 949 -> chcp 65001로 수정
               첫 시도 결과 : 한글로 조금씩 알아볼 수 있게 에러 표시가 나타남
