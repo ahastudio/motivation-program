@@ -1,8 +1,6 @@
 package JavaReport;
 
-
 public class Category {
-
     /*The reason why I add the 'public' is that other class should access this inner class.
     default access modifier makes it not be accessed by other classes.*/
     public class SportsCategory {

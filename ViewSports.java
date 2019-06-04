@@ -1,11 +1,11 @@
 package JavaReport;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class ViewSports {
     public ViewSports() {
-
     }
+
     public class ViewBasketball {
         public ViewBasketball() {
             Scanner chooseSports = new Scanner(System.in);
@@ -19,4 +19,3 @@ public class ViewSports {
         }
     }
 }
-

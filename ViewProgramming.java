@@ -1,10 +1,9 @@
 package JavaReport;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class ViewProgramming {
     public ViewProgramming() {
-
     }
 
     public class ViewDeveloper {

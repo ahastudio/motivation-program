@@ -1,22 +1,20 @@
 package JavaReport;
 
-import java.util.*;
+import java.util.ArrayList;
 
 public class ArrayListModule {
     public class SportsMoudule {
-
     }
 
     public class BusinessModule {
-
     }
 
     public class ProgrammingModule {
-
     }
 
     public class BasketballModule extends SportsMoudule {
         ArrayList<String> ArrayListBasketball = new ArrayList<String>();
+
         public BasketballModule() {
             ArrayListBasketball.add("(마이클 조던) : 두려움은 환상이다 \n\n");
             ArrayListBasketball.add("9000번 이상 슛을 놓치고.300번의 게임에서 졌다.\n 나를 믿고 맡겨진 결정골을 놓친것은 26번이다.\n 나는 지금까지 실패하고 또 실패했다.\n 그것이 내가 성공한 이유다.\n\n");
@@ -28,6 +26,7 @@ public class ArrayListModule {
 
     public class EntrepreneurModule extends BusinessModule {
         ArrayList<String> ArrayListBusiness = new ArrayList<String>();
+
         public EntrepreneurModule() {
             ArrayListBusiness.add("(NBA 댈러스 매버릭스 구단주 마크 큐반) : 에스프레소 머신?  장난하나? \n에스프레소 머신에 돈을 쓰기 전에 당신 혀부터 깨물어라. \n커피는 고객을 위한 것이다. \n점심시간에 사무실이 아닌 장소에서 이야기를 나누며 커피를 마셔도 충분하다 \n\n");
             ArrayListBusiness.add("야구에서 4할을 치는 타자는 명예에 전당에 오른다. 하지만 사업에서는 딱 한 번만 옳으면 된다.\n\n");
@@ -39,6 +38,7 @@ public class ArrayListModule {
 
     public class DeveloperModule extends ProgrammingModule {
         ArrayList<String> ArrayListProgramming = new ArrayList<String>();
+
         public DeveloperModule() {
             ArrayListProgramming.add("(코딩의 신 아샬) : 안녕하세요, 코딩의 신 아샬입니다. \n\n");
             ArrayListProgramming.add("안될 때마다 속으로 외치세요. \n뭔가 잘못했겠지. 뭔가 잘못했겠지. \n\n");
@@ -51,6 +51,3 @@ public class ArrayListModule {
         }
     }
 }
-
-
-
