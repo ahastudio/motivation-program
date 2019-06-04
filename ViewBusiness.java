@@ -6,8 +6,8 @@ public class ViewBusiness {
         public ViewBusiness() {
 
         }
-        public class Entrepreneur {
-            public Entrepreneur() {
+        public class ViewEntrepreneur {
+            public ViewEntrepreneur() {
                 Scanner chooseBusiness = new Scanner(System.in);
                 int selectedBusiness = chooseBusiness.nextInt();
                 if (selectedBusiness == 1) {
