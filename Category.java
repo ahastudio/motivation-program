@@ -11,6 +11,9 @@ public class Category {
         if (number == 1) {
             model.init(category);
         }
-        System.out.println(model);
+    }
+
+    public String toString() {
+        return model.toString();
     }
 }
