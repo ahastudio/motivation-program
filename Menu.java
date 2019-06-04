@@ -19,27 +19,21 @@ public class Menu {
         return "[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3.프로그래밍  4.인생";
     }
 
-    public Category createCategory(String superCategory) {
-        String category = "";
-
+    public String getCategory(String superCategory, int number) {
         switch (superCategory) {
             case "sports":
-                category = "basketball";
-                break;
+                return "basketball";
 
             case "business":
-                category = "entrepreneur";
-                break;
+                return "entrepreneur";
 
             case "programming":
-                category = "developer";
-                break;
+                return "developer";
 
             case "life":
-                category = "";
-                break;
+                return "philosophy";
         }
 
-        return new Category(category);
+        return "";
     }
 }

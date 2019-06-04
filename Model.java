@@ -24,6 +24,9 @@ public class Model {
     }
 
     public String toString() {
+        if (quotes.isEmpty()) {
+            return "준비 중입니다.";
+        }
         return quotes.toString();
     }
 

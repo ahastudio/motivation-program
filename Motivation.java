@@ -23,13 +23,13 @@ public class Motivation {
 
         System.out.println(menu.getPrompt(superCategory));
 
-        Category category = menu.createCategory(superCategory);
+        number = scanner.nextInt();
 
-        if (category == null) {
-            System.out.println("준비 중입니다.");
-            return;
-        }
+        String category = menu.getCategory(superCategory, number);
 
-        System.out.println(category);
+        Model model = new Model();
+        model.init(category);
+
+        System.out.println(model);
     }
 }
