@@ -9,23 +9,27 @@ public class Motivation {
         Scanner chooseFirst = new Scanner(System.in);
         int selectedFirst = chooseFirst.nextInt();
 
+        Menu menu = new Menu();
+        String superCategory = "";
+
         // Main flow control logic
         if (selectedFirst == 1) {
-            SportsCategory menu = new SportsCategory();
-            Category category = menu.createCategory();
-            System.out.println(category);
+            superCategory = "sports";
         } else if (selectedFirst == 2) {
-            BusinessCategory menu = new BusinessCategory();
-            Category category = menu.createCategory();
-            System.out.println(category);
+            superCategory = "business";
         } else if (selectedFirst == 3) {
-            ProgrammingCategory menu = new ProgrammingCategory();
-            Category category = menu.createCategory();
-            System.out.println(category);
+            superCategory = "programming";
         } else if (selectedFirst == 4) {
-            LifeCategory menu = new LifeCategory();
-            Category category = menu.createCategory();
-            System.out.println("준비 중입니다.");
+            superCategory = "life";
         }
+
+        Category category = menu.createCategory(superCategory);
+
+        if (category == null) {
+            System.out.println("준비 중입니다.");
+            return;
+        }
+
+        System.out.println(category);
     }
 }
