@@ -5,6 +5,22 @@ import java.util.ArrayList;
 public class Model {
     ArrayList<String> quotes = new ArrayList<String>();
 
+    public void init(String category) {
+        switch (category) {
+            case "basketball":
+                initBasketball();
+                break;
+
+            case "entrepreneur":
+                initEntrepreneur();
+                break;
+
+            case "developer":
+                initDeveloper();
+                break;
+        }
+    }
+
     public String toString() {
         return quotes.toString();
     }

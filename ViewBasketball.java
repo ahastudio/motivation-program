@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class ViewBasketball {
     private Model model = new Model();
 
-    public ViewBasketball() {
+    public ViewBasketball(String category) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         if (number == 1) {
-            model.initBasketball();
+            model.init(category);
         }
         System.out.println(model);
     }
