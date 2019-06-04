@@ -1,6 +1,12 @@
 package JavaReport;
 
 public class Menu {
+    public class IncorrectIndexException extends RuntimeException {
+    }
+
+    private static final String[] SUPER_CATEGORIES =
+            new String[]{"sports", "business", "programming", "life"};
+
     public String getPrompt(String superCategory) {
         switch (superCategory) {
             case "sports":
@@ -19,7 +25,19 @@ public class Menu {
         return "[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3.프로그래밍  4.인생";
     }
 
+    public String getSuperCategory(int index) {
+        try {
+            return SUPER_CATEGORIES[index];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            throw new IncorrectIndexException();
+        }
+    }
+
     public String getCategory(String superCategory, int index) {
+        if (index != 0) {
+            throw new IncorrectIndexException();
+        }
+
         switch (superCategory) {
             case "sports":
                 return "basketball";

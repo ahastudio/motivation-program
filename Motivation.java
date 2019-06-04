@@ -3,9 +3,6 @@ package JavaReport;
 import java.util.Scanner;
 
 public class Motivation {
-    private static final String[] SUPER_CATEGORIES =
-            new String[]{"sports", "business", "programming", "life"};
-
     private Menu menu = new Menu();
     private String superCategory = "";
     private String category = "";
@@ -30,24 +27,23 @@ public class Motivation {
     }
 
     private void inputSuperCategory() {
-        println(menu.getPrompt(""));
-
-        int index = inputNumber() - 1;
-
         try {
-            superCategory = SUPER_CATEGORIES[index];
-        } catch (ArrayIndexOutOfBoundsException e) {
+            println(menu.getPrompt(""));
+            int index = inputNumber() - 1;
+            superCategory = menu.getSuperCategory(index);
+        } catch (Menu.IncorrectIndexException e) {
             println("잘못된 입력입니다.");
-            return;
         }
     }
 
     private void inputCategory() {
-        println(menu.getPrompt(superCategory));
-
-        int index = scanner.nextInt() - 1;
-
-        category = menu.getCategory(superCategory, index);
+        try {
+            println(menu.getPrompt(superCategory));
+            int index = inputNumber() - 1;
+            category = menu.getCategory(superCategory, index);
+        } catch (Menu.IncorrectIndexException e) {
+            println("잘못된 입력입니다.");
+        }
     }
 
     private void printQuotes() {
