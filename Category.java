@@ -17,7 +17,11 @@ public class Category {
     }
 
     public class BusinessCategory {
-        public BusinessCategory() { System.out.println("1.인물  2.경영이념  3.마케팅  4.재무회계  5.인사관리  6.기타");
+        public BusinessCategory() {
+            System.out.println("1.인물  2.경영이념  3.마케팅  4.재무회계  5.인사관리  6.기타");
+            View LargeSports = new View();
+            View.ViewBusiness enjoyBusiness = LargeSports.new ViewBusiness();
+            System.out.println(enjoyBusiness);
         }
     }
 
