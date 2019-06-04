@@ -35,7 +35,7 @@ class LifeCategory {
     }
 }
 
-public class MotivationProgram {
+public class Motivation {
     public static void main(String[] args)  {
         System.out.println("[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3,프로그래밍  4.인생");
 
