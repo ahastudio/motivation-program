@@ -24,9 +24,5 @@ public class Motivation {
             Category.LifeCategory instanceLife = LargeCategory.new LifeCategory();
             System.out.println(instanceLife);
         }
-
-
-
-
     }
 }
