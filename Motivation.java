@@ -47,8 +47,7 @@ public class Motivation {
     }
 
     private void printQuotes() {
-        Model model = new Model();
-        model.init(category);
+        Model model = new Model(category);
 
         println(model.toString());
     }
