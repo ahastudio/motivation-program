@@ -10,6 +10,7 @@ public class Motivation {
 
         Category LargeCategory = new Category();
 
+        // Main flow control logic
         if(selectedFirst == 1) {
             Category.SportsCategory instanceSports = LargeCategory.new SportsCategory();
             System.out.println(instanceSports);
