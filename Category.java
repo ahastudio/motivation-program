@@ -2,10 +2,10 @@ package JavaReport;
 
 import java.util.Scanner;
 
-public class ViewDeveloper {
+public class Category {
     private Model model = new Model();
 
-    public ViewDeveloper(String category) {
+    public Category(String category) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         if (number == 1) {
