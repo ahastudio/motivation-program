@@ -1,6 +1,6 @@
 package JavaReport;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ArrayListModule {
     public class SportsMoudule {
@@ -8,6 +8,10 @@ public class ArrayListModule {
     }
 
     public class BusinessModule {
+
+    }
+
+    public class ProgrammingModule {
 
     }
 
@@ -30,6 +34,19 @@ public class ArrayListModule {
             ArrayListBusiness.add("날마다 저 밖에 있는 누군가는 반드시 당신의 사업을 박살내겠다는 일념 하나로 24시간 일하고있다. 정말 쿨하지 않나!\n\n");
             ArrayListBusiness.add("열정을 따르라는 조언은 정말 엿 같은 거다. \n 폼나는 물건은 절대로, 절대로 사지마라.\n 회사 외부의 누군가가 밖을 돌아다닐 때 당신 회사의 인터넷 주소가 박힌 \n 티셔츠를 입을 거라고 당신이 정말로 생각한다면,\n 그건 당신의 착각이고 당신은 돈을 벌 방법을 전혀 모르고 있는 거다.  \n\n");
             System.out.println(ArrayListBusiness);
+        }
+    }
+
+    public class DeveloperModule extends ProgrammingModule {
+        ArrayList<String> ArrayListProgramming = new ArrayList<String>();
+        public DeveloperModule() {
+            ArrayListProgramming.add("(코딩의 신 아샬) : 안녕하세요, 코딩의 신 아샬입니다. \n\n");
+            ArrayListProgramming.add("안될 때마다 속으로 외치세요. \n뭔가 잘못했겠지. 뭔가 잘못했겠지. \n\n");
+            ArrayListProgramming.add("갑자기 산에 틀어 박혀서 \n난 프로그래밍의 극의에 다다른 자 으아! \n이러고 내려와서 실전에 가보면\n발릴 걸요? \n그냥 발릴 걸요?\n쪽도 못 쓸 걸요?\n이건 중 2병이죠.\n\n");
+            ArrayListProgramming.add("피아노는 이렇게 손바닥을 펴고 때리는 거야! 이렇게! 도레미파솔!    \n\n");
+            ArrayListProgramming.add("으아아 개XX들아! 난 나간다 으아아! \n\n");
+            ArrayListProgramming.add("그럼 다들 안녕히 주무세요. 바이~ \n\n");
+            System.out.println(ArrayListProgramming);
         }
     }
 }
