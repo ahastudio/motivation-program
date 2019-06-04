@@ -1,11 +1,8 @@
 package JavaReport;
 
 public class LifeCategory {
-    public LifeCategory() {
+    public Category createCategory() {
         System.out.println("1.철학");
-    }
-
-    public String toString() {
-        return "준비 중입니다.";
+        return null;
     }
 }

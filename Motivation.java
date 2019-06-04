@@ -11,17 +11,21 @@ public class Motivation {
 
         // Main flow control logic
         if (selectedFirst == 1) {
-            SportsCategory instanceSports = new SportsCategory();
-            System.out.println(instanceSports);
+            SportsCategory menu = new SportsCategory();
+            Category category = menu.createCategory();
+            System.out.println(category);
         } else if (selectedFirst == 2) {
-            BusinessCategory instanceBusiness = new BusinessCategory();
-            System.out.println(instanceBusiness);
+            BusinessCategory menu = new BusinessCategory();
+            Category category = menu.createCategory();
+            System.out.println(category);
         } else if (selectedFirst == 3) {
-            ProgrammingCategory instanceProgramming = new ProgrammingCategory();
-            System.out.println(instanceProgramming);
+            ProgrammingCategory menu = new ProgrammingCategory();
+            Category category = menu.createCategory();
+            System.out.println(category);
         } else if (selectedFirst == 4) {
-            LifeCategory instanceLife = new LifeCategory();
-            System.out.println(instanceLife);
+            LifeCategory menu = new LifeCategory();
+            Category category = menu.createCategory();
+            System.out.println("준비 중입니다.");
         }
     }
 }
