@@ -6,35 +6,62 @@ public class Motivation {
     private static final String[] SUPER_CATEGORIES =
             new String[]{"sports", "business", "programming", "life"};
 
+    private Menu menu = new Menu();
+    private String superCategory = "";
+    private String category = "";
+
+    private Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         Motivation app = new Motivation();
         app.run();
     }
 
     public void run() {
-        Menu menu = new Menu();
-
-        System.out.println(menu.getPrompt(""));
-
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt() - 1;
-
-        if (number < 0 || number >= SUPER_CATEGORIES.length) {
-            System.out.println("잘못된 입력입니다.");
-            return;
+        while (superCategory.isEmpty()) {
+            inputSuperCategory();
         }
 
-        String superCategory = SUPER_CATEGORIES[number];
+        while (category.isEmpty()) {
+            inputCategory();
+        }
 
-        System.out.println(menu.getPrompt(superCategory));
+        printQuotes();
+    }
 
-        number = scanner.nextInt();
+    private void inputSuperCategory() {
+        println(menu.getPrompt(""));
 
-        String category = menu.getCategory(superCategory, number);
+        int index = inputNumber() - 1;
 
+        try {
+            superCategory = SUPER_CATEGORIES[index];
+        } catch (ArrayIndexOutOfBoundsException e) {
+            println("잘못된 입력입니다.");
+            return;
+        }
+    }
+
+    private void inputCategory() {
+        println(menu.getPrompt(superCategory));
+
+        int index = scanner.nextInt() - 1;
+
+        category = menu.getCategory(superCategory, index);
+    }
+
+    private void printQuotes() {
         Model model = new Model();
         model.init(category);
 
-        System.out.println(model);
+        println(model.toString());
+    }
+
+    private void println(String text) {
+        System.out.println(text);
+    }
+
+    private int inputNumber() {
+        return scanner.nextInt();
     }
 }

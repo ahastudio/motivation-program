@@ -19,7 +19,7 @@ public class Menu {
         return "[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3.프로그래밍  4.인생";
     }
 
-    public String getCategory(String superCategory, int number) {
+    public String getCategory(String superCategory, int index) {
         switch (superCategory) {
             case "sports":
                 return "basketball";
