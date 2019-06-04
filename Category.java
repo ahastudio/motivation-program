@@ -18,7 +18,7 @@ public class Category {
         public BusinessCategory() {
             System.out.println("1.인물  2.경영이념  3.마케팅  4.재무회계  5.인사관리  6.기타");
             ViewBusiness LargeBusiness = new ViewBusiness();
-            ViewBusiness.Entrepreneur enjoyEntrepreneur = LargeBusiness.new Entrepreneur();
+            ViewBusiness.ViewEntrepreneur enjoyEntrepreneur = LargeBusiness.new ViewEntrepreneur();
             System.out.println(enjoyEntrepreneur);
         }
     }
@@ -26,6 +26,9 @@ public class Category {
     public class ProgrammingCategory {
         public ProgrammingCategory() {
             System.out.println("1.인물  2.Java  3.JavaScript  4.node.js  5.C  6.C++");
+            ViewProgramming LargeProgramming = new ViewProgramming();
+            ViewProgramming.ViewDeveloper enjoyDeveloper = LargeProgramming.new ViewDeveloper();
+            System.out.println(enjoyDeveloper);
         }
     }
 
