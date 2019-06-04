@@ -9,20 +9,18 @@ public class Motivation {
         Scanner chooseFirst = new Scanner(System.in);
         int selectedFirst = chooseFirst.nextInt();
 
-        Category LargeCategory = new Category();
-
         // Main flow control logic
         if (selectedFirst == 1) {
-            Category.SportsCategory instanceSports = LargeCategory.new SportsCategory();
+            SportsCategory instanceSports = new SportsCategory();
             System.out.println(instanceSports);
         } else if (selectedFirst == 2) {
-            Category.BusinessCategory instanceBusiness = LargeCategory.new BusinessCategory();
+            BusinessCategory instanceBusiness = new BusinessCategory();
             System.out.println(instanceBusiness);
         } else if (selectedFirst == 3) {
-            Category.ProgrammingCategory instanceProgramming = LargeCategory.new ProgrammingCategory();
+            ProgrammingCategory instanceProgramming = new ProgrammingCategory();
             System.out.println(instanceProgramming);
         } else if (selectedFirst == 4) {
-            Category.LifeCategory instanceLife = LargeCategory.new LifeCategory();
+            LifeCategory instanceLife = new LifeCategory();
             System.out.println(instanceLife);
         }
     }
