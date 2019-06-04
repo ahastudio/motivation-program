@@ -7,7 +7,9 @@ public class Motivation {
             new String[]{"sports", "business", "programming", "life"};
 
     public static void main(String[] args) {
-        System.out.println("[동기부여 프로그램] 주제별 1.스포츠  2.비즈니스  3,프로그래밍  4.인생");
+        Menu menu = new Menu();
+
+        System.out.println(menu.getPrompt(""));
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt() - 1;
@@ -17,8 +19,10 @@ public class Motivation {
             return;
         }
 
-        Menu menu = new Menu();
         String superCategory = SUPER_CATEGORIES[number];
+
+        System.out.println(menu.getPrompt(superCategory));
+
         Category category = menu.createCategory(superCategory);
 
         if (category == null) {
